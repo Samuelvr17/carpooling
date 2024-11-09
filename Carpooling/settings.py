@@ -82,12 +82,8 @@ WSGI_APPLICATION = 'Carpooling.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE' : 'django.db.backends.postgresql',
-        'NAME' : 'carpooling',
-        'USER' : 'postgres',
-        'PASSWORD' : '0217',
-        'HOST' : 'localhost',
-        'PORT' : '5432',     
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # La base de datos se guarda en el directorio base del proyecto
     }
 }
 
